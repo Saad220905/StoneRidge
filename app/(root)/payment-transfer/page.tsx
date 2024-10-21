@@ -2,7 +2,9 @@ import React from 'react'
 
 const PaymentTransfer = () => {
   return (
-    <div>PaymentTransfer</div>
+    <section className='payment-transfer'>
+
+    </section>
   )
 }
 
