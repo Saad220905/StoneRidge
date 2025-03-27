@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
@@ -11,7 +13,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   title: "StoneRidge",
-  description: "StoneRidge is a modern Banking/Brokerage platform designed to taylor to a wide variety of users",
+  description: "StoneRidge is a modern banking platform for everyone.",
   icons: {
     icon: '/icons/logo.svg'
   }
@@ -24,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`$(inter.variable) $(ibmPlexSerif.variable)`}>{children}</body>
+      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>{children}</body>
     </html>
   );
 }
